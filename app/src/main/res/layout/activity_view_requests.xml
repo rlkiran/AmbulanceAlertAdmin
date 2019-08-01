@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewRequests"
+    >
+
+
+    <RelativeLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imageReceived"
+            android:layout_width="match_parent"
+            android:layout_height="450dp" />
+
+        <TextView
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/imageReceived"
+            style="@style/TextAppearance.AppCompat.Large"
+            android:id="@+id/userName"
+            android:textSize="25sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_below="@+id/userName"
+            android:id="@+id/address"
+            android:layout_centerInParent="true"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/info_bt"
+            android:text="get Info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/address"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:onClick="getInfo"
+            tools:ignore="HardcodedText" />
+
+
+    </RelativeLayout>
+
+
+</ScrollView>
